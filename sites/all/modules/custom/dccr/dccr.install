@@ -191,3 +191,11 @@ function dccr_update_7011() {
   $module_list = array('honeypot', 'logintoboggan');
   module_enable($module_list, TRUE);
 }
+
+/**
+ * Enables dccr_ftr_landing_pages.
+ */
+function dccr_update_7012() {
+  $module_list = array('dccr_ftr_landing_pages');
+  module_enable($module_list, TRUE);
+}
