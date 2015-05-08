@@ -249,3 +249,11 @@ function dccr_update_7016() {
   );
   path_save($path);
 }
+
+/**
+ * Enables dccr_ftr_landing_pages.
+ */
+function dccr_update_7017() {
+  $module_list = array('dccr_ftr_landing_pages');
+  module_enable($module_list, TRUE);
+}
