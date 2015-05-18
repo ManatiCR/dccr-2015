@@ -1,0 +1,15 @@
+
+name = DCCR 2015
+description = Theme used in Drupal Camp 2015 site.
+core = 7.x
+
+stylesheets[all][] = css/style.css
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+
+regions[footer] = Footer
+

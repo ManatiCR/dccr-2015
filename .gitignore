@@ -42,3 +42,6 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+# node_modules and components folder
+/sites/all/themes/dccr2015/node_modules
+/sites/all/themes/dccr2015/components
