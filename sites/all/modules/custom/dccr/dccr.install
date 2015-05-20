@@ -60,6 +60,19 @@ function dccr_install() {
   );
 
   $result = module_enable($modules_enable_list, TRUE);
+
+  // Maybe no a nice-looking way; but we want to be able to do a site-install.
+  $actual = 7000;
+  $continue = TRUE;
+  do {
+    $function_name = "dccr_update_$actual";
+    if (function_exists($function_name)) {
+      $function_name();
+    }
+    else {
+      $continue = FALSE;
+    }
+  } while ($continue);
 }
 
 /**
