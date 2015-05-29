@@ -18,7 +18,6 @@ header.header {
       width: 40%;
       float: left;
       ul {
-
         li {
           float: left;
           list-style: none;
@@ -29,11 +28,18 @@ header.header {
         }
       }
     }
+    .logo-leyenda {
+      width: 20%;
+      float: left;
+      p {
+        text-align: center;
+      }
+    }
     #block-menu-menu-right-menu {
       width: 40%;
       float: left;
       ul {
-        list-style: none;
+        float: right;
         li {
           float: left;
           list-style: none;

@@ -83,11 +83,16 @@ header.header {
         font-size: 13px; }
         header.header .header-content #block-menu-menu-left-menu ul li a {
           color: black; }
+    header.header .header-content .logo-leyenda {
+      width: 20%;
+      float: left; }
+      header.header .header-content .logo-leyenda p {
+        text-align: center; }
     header.header .header-content #block-menu-menu-right-menu {
       width: 40%;
       float: left; }
       header.header .header-content #block-menu-menu-right-menu ul {
-        list-style: none; }
+        float: right; }
         header.header .header-content #block-menu-menu-right-menu ul li {
           float: left;
           list-style: none;
