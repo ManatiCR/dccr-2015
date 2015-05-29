@@ -31,7 +31,8 @@
 ######################
 .DS_Store*
 ehthumbs.db
-Icon
+Icon
+
 Thumbs.db
 ._*
 
@@ -46,3 +47,7 @@ Thumbs.db
 # Node #
 ########
 node_modules
+
+# Bourbon and neat #
+/sites/all/themes/dccr2015/bourbon
+/sites/all/themes/dccr2015/neat
