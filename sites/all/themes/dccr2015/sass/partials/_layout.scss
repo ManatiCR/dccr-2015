@@ -2,46 +2,29 @@
 // General layout rules
 //
 
-    #block-dccr-blocks-dccr-main-logo {
-      width: 140px;
-     margin: 0 auto;
-      img {
-      }
-    }
-
 header.header {
   overflow: hidden;
+  .utility-bar {
+    #block-dccr-blocks-dccr-main-logo {
+      width: 140px;
+      margin: 0 auto;
+    }
+  }
   .header-content {
     @include outer-container(1200px);
-
     #block-menu-menu-left-menu {
       width: 40%;
       float: left;
-      ul {
-
-        li {
-          float: left;
-          list-style: none;
-          font-size: 13px;
-          a{
-            color: black;
-          }
-        }
-      }
+    }
+    .logo-leyenda {
+      width: 20%;
+      float: left;
     }
     #block-menu-menu-right-menu {
       width: 40%;
       float: left;
       ul {
-        list-style: none;
-        li {
-          float: left;
-          list-style: none;
-          font-size: 13px;
-          a{
-            color: black;
-          }
-        }
+        float: right;
       }
     }
   }
@@ -49,120 +32,65 @@ header.header {
 //encabezado de pagina de inicio
 
 .encabezado-inicio {
-  background: url(../images/encabezado-fondo.jpg) no-repeat center white;
   .content {
     @include outer-container(1200px);
     margin: 0 auto;
-    header {
-      text-align: center;
-      h1{
-       font-size: 25px;
-     }
-   }
-   .content-wrapper {
-    .content-inner {
-      overflow: hidden;
-      @include outer-container(800px);
-      .left {
-        @include span-columns(6 of 12);
-        @include omega;
-        text-align: center;
-        .centra-boton {
-          width: 138px;
-          margin: 0 auto;
+    .content-wrapper {
+      .content-inner {
+        overflow: hidden;
+        @include outer-container(800px);
+        .left {
+          @include span-columns(6 of 12);
+          @include omega;
+          .centra-boton {
+            width: 138px;
+            margin: 0 auto;
+          }
+        }
+        .right {
+          @include span-columns(6 of 12);
+          @include omega;
+          .centra-boton {
+            width: 138px;
+            margin: 0 auto;
+          }
         }
       }
-      .right {
-        @include span-columns(6 of 12);
-        @include omega;
-        text-align: center;
-        .centra-boton {
-          width: 138px;
-          margin: 0 auto;
-        }
-      }
-    }
-    .boton-wrapper{
-      display: block;
-      overflow: hidden;
-      clear: both;
-      margin: 30px auto;
-      width: 231px;
-      .boton-negro {
-        @include boton(black, white);
+      .boton-wrapper{
+        clear: both;
+        margin: 30px auto;
+        width: 231px;
       }
     }
   }
-}
 }
 
 // bloque de conferencistas
 .conferencistas-block{
-  background: url(../images/hojas-fondo.jpg);
-  background-size: 12%;
-  h2 {
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    text-transform: uppercase;
-    padding-top: 30px;
-    margin: 0;
-    &:after {
-      content: "";
-      border-bottom: 3px solid rgba(0,0,0,0.2);
-      width: 200px;
-      height: 1px;
-      display: block;
-      margin: 5px auto 0;
-    }
-  }
   .conferencistas {
     @include outer-container(1200px);
     .view-content {
-      overflow: hidden;
-      padding: 0 25px 10px;
       .views-row {
         @include span-columns(4);
-        background: white;
-        position: relative;
-        margin-top: 110px;
-        padding: 30px 25px 25px;
-        border-radius: 5px;
-        box-shadow: 4px 4px 9px -2px rgba(0,0,0, 0.5);
         .views-field-picture {
           position: absolute;
           top: -60%;
           left: 33%;
           .field-content {
-            text-align: center;
-            a {
-              border-radius: 100%;
-              display: block;
-              overflow: hidden;
-              width: 101px;
-              height: 101px;
-              margin: 0 auto;
-              border: solid 4px white;
-              background: white;
-            }
           }
-        }
-        a, p {
-          color: $grey-font;
-        }
-        a{
-          font-weight: bold;
         }
       }
     }
     .view-footer {
       width: 202px;
       margin: 20px auto 30px;
-      text-align: center;
-      overflow: hidden;
-      a{
-        @extend .boton-basico;
-      }
     }
+  }
+}
+// MAPA UCR
+.ucr-mapa {
+  iframe {
+    margin: 50px auto;
+    display: block;
   }
 }
