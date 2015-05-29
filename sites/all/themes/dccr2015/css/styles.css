@@ -1,19 +1,241 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /*
  * Estilos para sitio web del DrupalCamp CR 2015
  *
  */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.boton-basico, .conferencistas-block .conferencistas .view-footer a {
+  background: #e35534;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
+  .boton-basico:after, .conferencistas-block .conferencistas .view-footer a:after {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid white;
+    content: "";
+    font-size: 1px;
+    text-align: right;
+    margin: 5px 0 0 10px;
+    display: block;
+    float: right; }
+
 html {
   font-size: 62.5%; }
 
 body {
   font-family: "Source Sans Pro", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+footer.footer {
+  background: #3c3c44;
+  border-bottom: 10px solid #52e2ae;
+  padding: 40px 0; }
+  footer.footer h2 {
+    font-size: 18pt;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 6px; }
+  footer.footer a, footer.footer p {
+    color: #52e2ae;
+    font-size: 13pt; }
+  footer.footer .footer-content {
+    width: 520px;
+    margin: 0 auto;
+    text-align: center; }
+
+#block-dccr-blocks-dccr-main-logo {
+  width: 140px;
+  margin: 0 auto; }
+
+header.header {
+  overflow: hidden; }
+  header.header .header-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    header.header .header-content::after {
+      clear: both;
+      content: "";
+      display: table; }
+    header.header .header-content #block-menu-menu-left-menu {
+      width: 40%;
+      float: left; }
+      header.header .header-content #block-menu-menu-left-menu ul li {
+        float: left;
+        list-style: none;
+        font-size: 13px; }
+        header.header .header-content #block-menu-menu-left-menu ul li a {
+          color: black; }
+    header.header .header-content #block-menu-menu-right-menu {
+      width: 40%;
+      float: left; }
+      header.header .header-content #block-menu-menu-right-menu ul {
+        list-style: none; }
+        header.header .header-content #block-menu-menu-right-menu ul li {
+          float: left;
+          list-style: none;
+          font-size: 13px; }
+          header.header .header-content #block-menu-menu-right-menu ul li a {
+            color: black; }
+
+.encabezado-inicio {
+  background: url(../images/encabezado-fondo.jpg) no-repeat center white; }
+  .encabezado-inicio .content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto; }
+    .encabezado-inicio .content::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .encabezado-inicio .content header {
+      text-align: center; }
+      .encabezado-inicio .content header h1 {
+        font-size: 25px; }
+    .encabezado-inicio .content .content-wrapper .content-inner {
+      overflow: hidden;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto; }
+      .encabezado-inicio .content .content-wrapper .content-inner::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .encabezado-inicio .content .content-wrapper .content-inner .left {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: 0;
+        text-align: center; }
+        .encabezado-inicio .content .content-wrapper .content-inner .left:last-child {
+          margin-right: 0; }
+        .encabezado-inicio .content .content-wrapper .content-inner .left .centra-boton {
+          width: 138px;
+          margin: 0 auto; }
+      .encabezado-inicio .content .content-wrapper .content-inner .right {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: 0;
+        text-align: center; }
+        .encabezado-inicio .content .content-wrapper .content-inner .right:last-child {
+          margin-right: 0; }
+        .encabezado-inicio .content .content-wrapper .content-inner .right .centra-boton {
+          width: 138px;
+          margin: 0 auto; }
+    .encabezado-inicio .content .content-wrapper .boton-wrapper {
+      display: block;
+      overflow: hidden;
+      clear: both;
+      margin: 30px auto;
+      width: 231px; }
+      .encabezado-inicio .content .content-wrapper .boton-wrapper .boton-negro {
+        background: black;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        text-decoration: none;
+        cursor: pointer;
+        float: left;
+        font-size: 15px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
+        .encabezado-inicio .content .content-wrapper .boton-wrapper .boton-negro:after {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 7px solid white;
+          content: "";
+          font-size: 1px;
+          text-align: right;
+          margin: 5px 0 0 10px;
+          display: block;
+          float: right; }
+
+.conferencistas-block {
+  background: url(../images/hojas-fondo.jpg);
+  background-size: 12%; }
+  .conferencistas-block h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin: 0; }
+    .conferencistas-block h2:after {
+      content: "";
+      border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+      width: 200px;
+      height: 1px;
+      display: block;
+      margin: 5px auto 0; }
+  .conferencistas-block .conferencistas {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .conferencistas-block .conferencistas::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .conferencistas-block .conferencistas .view-content {
+      overflow: hidden;
+      padding: 0 25px 10px; }
+      .conferencistas-block .conferencistas .view-content .views-row {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        background: white;
+        position: relative;
+        margin-top: 110px;
+        padding: 30px 25px 25px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 9px -2px rgba(0, 0, 0, 0.5); }
+        .conferencistas-block .conferencistas .view-content .views-row:last-child {
+          margin-right: 0; }
+        .conferencistas-block .conferencistas .view-content .views-row .views-field-picture {
+          position: absolute;
+          top: -60%;
+          left: 33%; }
+          .conferencistas-block .conferencistas .view-content .views-row .views-field-picture .field-content {
+            text-align: center; }
+            .conferencistas-block .conferencistas .view-content .views-row .views-field-picture .field-content a {
+              border-radius: 100%;
+              display: block;
+              overflow: hidden;
+              width: 101px;
+              height: 101px;
+              margin: 0 auto;
+              border: solid 4px white;
+              background: white; }
+        .conferencistas-block .conferencistas .view-content .views-row a, .conferencistas-block .conferencistas .view-content .views-row p {
+          color: #666C6C; }
+        .conferencistas-block .conferencistas .view-content .views-row a {
+          font-weight: bold; }
+    .conferencistas-block .conferencistas .view-footer {
+      width: 202px;
+      margin: 20px auto 30px;
+      text-align: center;
+      overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */

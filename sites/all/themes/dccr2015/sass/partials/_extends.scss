@@ -1,0 +1,8 @@
+//
+// Extends
+//
+
+//orange button
+.boton-basico {
+  @include boton($anaranjado, white)
+}

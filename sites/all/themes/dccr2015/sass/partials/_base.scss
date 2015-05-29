@@ -9,4 +9,28 @@ html {
 body {
   font-family: $base-font;
 }
+a {
+  text-decoration: none;
+}
 
+footer.footer {
+  background: $negro-claro;
+  border-bottom: 10px solid $verde-turquesa;
+  padding: 40px 0;
+  h2 {
+      font-size: 18pt;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+  }
+  a, p {
+    color: $verde-turquesa;
+    font-size: 13pt;
+  }
+  .footer-content {
+    width: 520px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

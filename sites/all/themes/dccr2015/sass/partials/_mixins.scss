@@ -7,3 +7,28 @@
   font-size: $size + px;
   font-size: ($size / 10) + rem;
 }
+//button
+@mixin boton($background, $color) {
+  background: $background;
+  color: $color;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  &:after {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid $color;
+    content: "";
+    font-size: 1px;
+    text-align: right;
+    margin: 5px 0 0 10px;
+    display: block;
+    float: right;
+  }
+}

@@ -1,11 +1,5 @@
 <header class="header" role="banner">
-  <?php if ($messages): ?>
-  <div class="messages-wrapper">
-    <div class="messages-content">
-      <?php print $messages; ?>
-    </div>
-  </div>
-  <?php endif; ?>
+
   <?php if ($page['utility_bar']): ?>
     <div class="utility-bar">
       <div class="utility-bar-content">
@@ -14,12 +8,6 @@
     </div><!-- /utility-bar -->
   <?php endif; ?>
   <div class="header-content">
-
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" class="logo" rel="home" id="logo">
-        <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" />
-      </a>
-    <?php endif; ?>
 
     <?php if ($site_name || $site_slogan): ?>
 
@@ -60,7 +48,13 @@
   <?php if ($page['highlighted']): ?>
     <?php print render($page['highlighted']); ?>
   <?php endif; ?>
-
+  <?php if ($messages): ?>
+  <div class="messages-wrapper">
+    <div class="messages-content">
+      <?php print $messages; ?>
+    </div>
+  </div>
+  <?php endif; ?>
     <a id="main-content"></a>
     <div class="main" role="main">
       <?php print render($title_prefix); ?>
