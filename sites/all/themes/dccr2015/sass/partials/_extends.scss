@@ -6,3 +6,14 @@
 .boton-basico {
   @include boton($anaranjado, white)
 }
+
+%marco-redondo {
+  border-radius: 100%;
+  display: block;
+  overflow: hidden;
+  width: 101px;
+  height: 101px;
+  margin: 0 auto;
+  border: solid 4px white;
+  background: white;
+}

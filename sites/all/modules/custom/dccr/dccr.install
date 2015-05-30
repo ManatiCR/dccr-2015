@@ -364,3 +364,11 @@ function dccr_update_7025() {
     ->condition('delta', array('menu-left-menu', 'menu-right-menu'), 'IN')
     ->execute();
 }
+
+/**
+ * Enable Drupal Camp 2015.
+ */
+function dccr_update_7026() {
+  $module_list = array('dccr_ftr_2015');
+  module_enable($module_list, TRUE);
+}

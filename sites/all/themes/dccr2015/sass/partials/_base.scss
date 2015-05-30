@@ -124,14 +124,7 @@ header.header {
           .field-content {
             text-align: center;
             a {
-              border-radius: 100%;
-              display: block;
-              overflow: hidden;
-              width: 101px;
-              height: 101px;
-              margin: 0 auto;
-              border: solid 4px white;
-              background: white;
+              @extend %marco-redondo;
             }
           }
         }
@@ -153,6 +146,24 @@ header.header {
   }
 }
 
+// bloque comunidad
+.comunidad-block {
+  background: url(../images/comunidad-fondo.jpg) no-repeat center #3c3c44;
+  background-size: 50%;
+  .view-content {
+    .views-row {
+      float: left;
+      .views-field-picture {
+        .field-content {
+          text-align: center;
+          a {
+            @extend %marco-redondo;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 footer.footer {
