@@ -4,7 +4,7 @@
 
 //orange button
 .boton-basico {
-  @include boton($anaranjado, white)
+  @include boton($anaranjado, white);
 }
 
 %marco-redondo {

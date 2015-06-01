@@ -18,6 +18,8 @@ a {
 //
 
 header.header {
+  border-bottom: 4px solid $verde-turquesa;
+  padding-bottom: 40px;
   .utility-bar {
     background: url(../images/nubes.jpg) no-repeat center white;
     #block-dccr-blocks-dccr-main-logo {
@@ -33,6 +35,8 @@ header.header {
           float: left;
           list-style: none;
           font-size: 13px;
+          margin: 0;
+          padding: 0;
           a{
             color: black;
             padding: 5px 10px;
@@ -41,8 +45,13 @@ header.header {
       }
     }
     .logo-leyenda {
+        margin-top: 12px;
       p {
         text-align: center;
+        font-family: "latobold";
+        font-size: 21px;
+        color: $verde-turquesa;
+        margin: 0;
       }
     }
   }
@@ -61,26 +70,54 @@ header.header {
     header {
       text-align: center;
       h1{
-       font-size: 25px;
+          font-size: 26px;
+          font-family: "latobold";
+          font-weight: normal;
+          letter-spacing: 3px;
+     }
+     p{
+      font-size: 13px;
+      margin: 0;
+      color: $negro-claro;
      }
    }
    .content-wrapper {
     .content-inner {
-      overflow: hidden;
+      padding-top: 40px;
+      margin-top: 40px;
+      &:after {
+        border-top: 1px solid #CFCFCF;
+        content: "";
+        height: 1px;
+        width: 50%;
+        margin: 0 auto;
+        top: -150px;
+        position: relative;
+      }
       .left {
         text-align: center;
+        border-right: 1px solid #CFCFCF;
         .centra-boton {
+          font-family: "latobold";
         }
       }
       .right {
         text-align: center;
         .centra-boton {
+          font-family: "latobold";
         }
+      }
+      .fechas {
+        font-size: 16px;
+        font-size: 16px;
+        max-width: 173px;
+        margin: 0 auto 15px;
       }
     }
     .boton-wrapper{
       display: block;
       overflow: hidden;
+      font-family: "latobold";
       .boton-negro {
         @include boton($negro-claro, white);
       }
@@ -100,6 +137,7 @@ header.header {
     text-transform: uppercase;
     padding-top: 30px;
     margin: 0;
+    font-family: "latobold";
     &:after {
       content: "";
       border-bottom: 3px solid rgba(0,0,0,0.2);
@@ -128,8 +166,18 @@ header.header {
             }
           }
         }
+        .views-field-field-full-name {
+          font-size: 13px;
+          font-family: "latoregular";
+        }
+        .views-field-field-company {
+          font-size: 13px;
+          font-family: "latoblack";
+        }
         a, p {
           color: $gris-fuente;
+          font-family: "latoregular";
+          font-size: 13px;
         }
         a{
           font-weight: bold;
@@ -165,6 +213,17 @@ header.header {
   }
 }
 
+// bloque patrocinadores
+.patrocinadores-block {
+  .more-link {
+    margin: 0 auto 40px;
+    width: 142px;
+    overflow: hidden;
+    a {
+      @include boton($verde-turquesa, black);
+    }
+  }
+}
 
 footer.footer {
   background: $negro-claro;

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Camp 2015 feature.
+ */
+
+include_once 'dccr_ftr_2015.features.inc';
