@@ -2,3 +2,95 @@
 // General layout rules
 //
 
+header.header {
+  overflow: hidden;
+  .utility-bar {
+    #block-dccr-blocks-dccr-main-logo {
+      width: 140px;
+      margin: 0 auto;
+    }
+  }
+  .header-content {
+    @include outer-container(1200px);
+    #block-menu-menu-left-menu {
+      width: 40%;
+      float: left;
+    }
+    .logo-leyenda {
+      width: 20%;
+      float: left;
+    }
+    #block-menu-menu-right-menu {
+      width: 40%;
+      float: left;
+      ul {
+        float: right;
+      }
+    }
+  }
+}
+//encabezado de pagina de inicio
+
+.encabezado-inicio {
+  .content {
+    @include outer-container(1200px);
+    margin: 0 auto;
+    .content-wrapper {
+      .content-inner {
+        overflow: hidden;
+        @include outer-container(800px);
+        .left {
+          @include span-columns(6 of 12);
+          @include omega;
+          .centra-boton {
+            width: 138px;
+            margin: 0 auto;
+          }
+        }
+        .right {
+          @include span-columns(6 of 12);
+          @include omega;
+          .centra-boton {
+            width: 138px;
+            margin: 0 auto;
+          }
+        }
+      }
+      .boton-wrapper{
+        clear: both;
+        margin: 30px auto;
+        width: 231px;
+      }
+    }
+  }
+}
+
+// bloque de conferencistas
+.conferencistas-block{
+  .conferencistas {
+    @include outer-container(1200px);
+    .view-content {
+      .views-row {
+        @include span-columns(4);
+        .views-field-picture {
+          position: absolute;
+          top: -60%;
+          left: 33%;
+          .field-content {
+          }
+        }
+      }
+    }
+    .view-footer {
+      width: 202px;
+      margin: 20px auto 30px;
+    }
+  }
+}
+// MAPA UCR
+.ucr-mapa {
+  iframe {
+    margin: 50px auto;
+    display: block;
+  }
+}
