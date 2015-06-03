@@ -366,6 +366,7 @@ function dccr_update_7025() {
 }
 
 /**
+ *
  * Enable Drupal Camp 2015.
  */
 function dccr_update_7026() {
