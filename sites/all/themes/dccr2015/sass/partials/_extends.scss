@@ -4,5 +4,19 @@
 
 //orange button
 .boton-basico {
-  @include boton($anaranjado, white)
+  @include boton($anaranjado, white);
+}
+
+%marco-redondo {
+  border-radius: 100%;
+  display: block;
+  overflow: hidden;
+  width: 147px;
+  height: 147px;
+  margin: 0 auto;
+  border: solid 4px white;
+  background: white;
+  img {
+    height: 100%;
+  }
 }

@@ -13,15 +13,15 @@ header.header {
   .header-content {
     @include outer-container(1200px);
     #block-menu-menu-left-menu {
-      width: 40%;
+      width: 36%;
       float: left;
     }
     .logo-leyenda {
-      width: 20%;
+      width: 28%;
       float: left;
     }
     #block-menu-menu-right-menu {
-      width: 40%;
+      width: 36%;
       float: left;
       ul {
         float: right;
@@ -37,13 +37,12 @@ header.header {
     margin: 0 auto;
     .content-wrapper {
       .content-inner {
-        overflow: hidden;
         @include outer-container(800px);
         .left {
           @include span-columns(6 of 12);
           @include omega;
           .centra-boton {
-            width: 138px;
+            width: 162px;
             margin: 0 auto;
           }
         }
@@ -51,15 +50,15 @@ header.header {
           @include span-columns(6 of 12);
           @include omega;
           .centra-boton {
-            width: 138px;
+            width: 154px;
             margin: 0 auto;
           }
         }
       }
       .boton-wrapper{
         clear: both;
-        margin: 30px auto;
-        width: 231px;
+        margin: 40px auto;
+        width: 266px;
       }
     }
   }
@@ -74,7 +73,7 @@ header.header {
         @include span-columns(4);
         .views-field-picture {
           position: absolute;
-          top: -60%;
+          top: -83%;
           left: 33%;
           .field-content {
           }
@@ -82,7 +81,7 @@ header.header {
       }
     }
     .view-footer {
-      width: 202px;
+      width: 212px;
       margin: 20px auto 30px;
     }
   }
@@ -92,5 +91,63 @@ header.header {
   iframe {
     margin: 50px auto;
     display: block;
+  }
+}
+
+// bloque comunidad
+.comunidad-block {
+  .view-content {
+    @include outer-container(1200px);
+    min-height: 500px;
+    overflow: hidden;
+    padding: 40px 10px;
+    .comunidad-superior {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      margin: 10px auto;
+      text-align: center;
+    }
+    .comunidad-inferior {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      margin: 10px auto;
+      text-align: center;
+    }
+    .views-row {
+      display: inline;
+      padding: 6px 12px;
+    }
+  }
+}
+
+// bloque patrocinadores
+.patrocinadores-block {
+  .view-content {
+    @include outer-container(1200px);
+    .views-row {
+      float: left;
+      width: 20%;
+      margin: 2% 3.3%;
+      text-align: center;
+      &:nth-child(odd):nth-child(4n+1) {
+        margin-left: 0;
+      }
+      &:nth-child(even):nth-child(4n+2) {
+
+      }
+      &:nth-child(odd):nth-child(4n+3) {
+
+      }
+      &:nth-child(even):nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .more-link {
+    a {
+
+    }
   }
 }
