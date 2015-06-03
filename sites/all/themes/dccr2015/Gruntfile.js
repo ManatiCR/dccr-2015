@@ -59,11 +59,11 @@ module.exports = function (grunt) {
               outputStyle: 'compressed',
             },
             files: {
-              'css/styles.css': 'sass/styles.scss', 
+              'css/styles.css': 'sass/styles.scss',
             },
           },
         },
-        
+
         // Javascript linting with jshint
         jshint: {
           options: {
@@ -116,19 +116,19 @@ module.exports = function (grunt) {
           }
         }
     });
- 
-    // Load the plugin(s), but I'm using load-grunt-tasks 
+
+    // Load the plugin(s), but I'm using load-grunt-tasks
     // https://github.com/sindresorhus/load-grunt-tasks
     // grunt.loadNpmTasks('grunt-concurrent');
- 
- 
+
+
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    // The "default" task is what I leave running all the time. Since it is the default, 
-    // you can start it by simply running 
+    // The "default" task is what I leave running all the time. Since it is the default,
+    // you can start it by simply running
     // $ grunt
     // or, to run production's tasks
     // $ grunt build
-    
+
     grunt.registerTask('prod', [
         'jshint',
         'uglify:prod',

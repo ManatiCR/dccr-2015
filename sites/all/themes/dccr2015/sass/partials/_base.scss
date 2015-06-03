@@ -218,6 +218,12 @@ header.header {
 // bloque comunidad
 .comunidad-block {
   background: url(../images/comunidad-fondo.jpg) no-repeat center #3c3c44;
+  h2 {
+    text-align: center;
+    color: white;
+    font-family: "latobold";
+
+  }
   .view-content {
     .views-row {
       float: left;

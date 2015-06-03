@@ -211,6 +211,10 @@ header.header {
 
 .comunidad-block {
   background: url(../images/comunidad-fondo.jpg) no-repeat center #3c3c44; }
+  .comunidad-block h2 {
+    text-align: center;
+    color: white;
+    font-family: "latobold"; }
   .comunidad-block .view-content .views-row {
     float: left; }
     .comunidad-block .view-content .views-row .views-field-picture .field-content {
@@ -255,9 +259,9 @@ footer.footer {
   footer.footer h2 {
     font-size: 18pt;
     color: white;
-    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 6px; }
+    letter-spacing: 6px;
+    font-family: "latobold"; }
   footer.footer a, footer.footer p {
     color: #52e2ae;
     font-size: 13pt; }
