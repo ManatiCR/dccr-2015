@@ -73,7 +73,7 @@ header.header {
         @include span-columns(4);
         .views-field-picture {
           position: absolute;
-          top: -60%;
+          top: -83%;
           left: 33%;
           .field-content {
           }
@@ -106,7 +106,6 @@ header.header {
       display: block;
       overflow: hidden;
       margin: 10px auto;
-      max-width: 595px;
       text-align: center;
     }
     .comunidad-inferior {
@@ -114,12 +113,11 @@ header.header {
       display: block;
       overflow: hidden;
       margin: 10px auto;
-      max-width: 460px;
       text-align: center;
     }
     .views-row {
       display: inline;
-      margin: 1% 1.5%;
+      padding: 6px 12px;
     }
   }
 }
@@ -130,6 +128,21 @@ header.header {
     @include outer-container(1200px);
     .views-row {
       float: left;
+      width: 20%;
+      margin: 2% 3.3%;
+      text-align: center;
+      &:nth-child(odd):nth-child(4n+1) {
+        margin-left: 0;
+      }
+      &:nth-child(even):nth-child(4n+2) {
+
+      }
+      &:nth-child(odd):nth-child(4n+3) {
+
+      }
+      &:nth-child(even):nth-child(4n) {
+        margin-right: 0;
+      }
     }
   }
   .more-link {

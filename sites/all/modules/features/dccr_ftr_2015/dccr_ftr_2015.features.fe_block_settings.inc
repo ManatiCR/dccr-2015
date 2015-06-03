@@ -187,6 +187,76 @@ function dccr_ftr_2015_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['menu-menu-left-menu'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'menu-left-menu',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'menu',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'dccr2015' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dccr2015',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
+  $export['menu-menu-right-menu'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'menu-right-menu',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'menu',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'dccr2015' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dccr2015',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   $export['views-comunidad-block'] = array(
     'cache' => -1,
     'css_class' => 'comunidad-block',
@@ -294,7 +364,7 @@ function dccr_ftr_2015_default_fe_block_settings() {
 
   $export['views-sponsors-block_1'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'patrocinadores-block',
     'custom' => 0,
     'delta' => 'sponsors-block_1',
     'i18n_block_language' => array(),
@@ -323,7 +393,7 @@ function dccr_ftr_2015_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => '<none>',
     'visibility' => 0,
   );
 

@@ -11,9 +11,12 @@
   border-radius: 100%;
   display: block;
   overflow: hidden;
-  width: 101px;
-  height: 101px;
+  width: 147px;
+  height: 147px;
   margin: 0 auto;
   border: solid 4px white;
   background: white;
+  img {
+    height: 100%;
+  }
 }

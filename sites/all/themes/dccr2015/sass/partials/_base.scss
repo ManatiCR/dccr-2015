@@ -4,10 +4,12 @@
 
 html {
   font-size: 62.5%;
+  color: $negro-claro;
 }
 
 body {
   font-family: $base-font;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -53,6 +55,28 @@ header.header {
         color: $verde-turquesa;
         margin: 0;
       }
+      .content{
+        border-bottom: 1px solid #cecece;
+        padding-bottom: 40px;
+        &:after,
+        &:before {
+          content: "";
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+          display: block;
+          background-color: #cecece;
+          position: absolute;
+          float: left;
+          bottom: -1.5px;
+        }
+        &:after {
+          left: 0;
+        }
+        &:before {
+          right: 0;
+        }
+      }
     }
   }
   .menu {
@@ -65,7 +89,7 @@ header.header {
 //encabezado de pagina de inicio
 
 .encabezado-inicio {
-  background: url(../images/encabezado-fondo.jpg) no-repeat center white;
+  background: url(../images/encabezado-fondo.jpg) no-repeat center #f7f7f7;
   .content {
     header {
       text-align: center;
@@ -128,8 +152,7 @@ header.header {
 
 // bloque de conferencistas
 .conferencistas-block{
-  background: url(../images/hojas-fondo.jpg);
-  background-size: 12%;
+  background: url(../images/hojas-fondo.jpg) repeat $verde-turquesa;
   h2 {
     color: white;
     text-align: center;
@@ -141,7 +164,7 @@ header.header {
     &:after {
       content: "";
       border-bottom: 3px solid rgba(0,0,0,0.2);
-      width: 200px;
+      width: 220px;
       height: 1px;
       display: block;
       margin: 5px auto 0;
@@ -154,10 +177,15 @@ header.header {
       .views-row {
         background: white;
         position: relative;
-        margin-top: 110px;
+        margin-top: 150px;
         padding: 30px 25px 25px;
         border-radius: 5px;
         box-shadow: 4px 4px 9px -2px rgba(0,0,0, 0.5);
+        a, p {
+          color: $gris-fuente;
+          font-family: "latoregular";
+          font-size: 13px;
+        }
         .views-field-picture {
           .field-content {
             text-align: center;
@@ -169,18 +197,11 @@ header.header {
         .views-field-field-full-name {
           font-size: 13px;
           font-family: "latoregular";
+          color: $gris-fuente;
         }
         .views-field-field-company {
           font-size: 13px;
           font-family: "latoblack";
-        }
-        a, p {
-          color: $gris-fuente;
-          font-family: "latoregular";
-          font-size: 13px;
-        }
-        a{
-          font-weight: bold;
         }
       }
     }
@@ -197,15 +218,17 @@ header.header {
 // bloque comunidad
 .comunidad-block {
   background: url(../images/comunidad-fondo.jpg) no-repeat center #3c3c44;
-  background-size: 50%;
   .view-content {
     .views-row {
       float: left;
       .views-field-picture {
         .field-content {
           text-align: center;
+          border: 5px solid #4B4A50;
+          border-radius: 100%;
           a {
             @extend %marco-redondo;
+            border-width: 10px;
           }
         }
       }
@@ -217,10 +240,11 @@ header.header {
 .patrocinadores-block {
   .more-link {
     margin: 0 auto 40px;
-    width: 142px;
+    width: 164px;
     overflow: hidden;
     a {
-      @include boton($verde-turquesa, black);
+      @include boton($verde-turquesa, $negro-claro);
+      font-family: "latobold";
     }
   }
 }
@@ -232,9 +256,9 @@ footer.footer {
   h2 {
     font-size: 18pt;
     color: white;
-    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 6px;
+    font-family: "latobold"
   }
   a, p {
     color: $verde-turquesa;

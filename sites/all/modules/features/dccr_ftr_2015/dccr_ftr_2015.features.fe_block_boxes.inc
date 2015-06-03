@@ -25,8 +25,7 @@ function dccr_ftr_2015_default_fe_block_boxes() {
   $fe_block_boxes->info = 'encabezado de inicio';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'encabezado_de_inicio';
-  $fe_block_boxes->body = '<header><h1>El evento web más grande del país</h1><p>Se habla de Drupal, front-end, Back-end, negocios, proyectos y más.</p></header><div class="content-wrapper">
-<div class="content-inner">
+  $fe_block_boxes->body = '<header><h1>El evento web más grande del país</h1><p class="intro">Se habla de Drupal, front-end,</p><p class="intro"> Back-end, negocios, proyectos y más.</p><div class="content-wrapper"></header><div class="content-inner">
 <div class="left">
 <p class="fechas">29 de Julio, <strong>talleres</strong> (Cupo Limitado)</p>
 <p class="centra-boton"><a class="boton-basico">ver talleres</a><p/>
@@ -35,9 +34,7 @@ function dccr_ftr_2015_default_fe_block_boxes() {
 <p class="fechas">30 y 31 de Julio, <strong>conferencias</strong></p>
 <p class="centra-boton"><a class="boton-basico">ver agenda</a><p/>
 </div>
-</div>
-<p class="boton-wrapper"><a class="boton-negro" href="#">Registrarme en el evento</a></p>
-</div>';
+</div><p class="boton-wrapper"><a class="boton-negro" href="#">Registrarme en el evento</a></p></div>';
 
   $export['encabezado_de_inicio'] = $fe_block_boxes;
 
@@ -45,7 +42,8 @@ function dccr_ftr_2015_default_fe_block_boxes() {
   $fe_block_boxes->info = 'logo leyenda';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'logo_leyenda';
-  $fe_block_boxes->body = '<p>29 al 31 de julio </ br>Sede Patrocinadores Universidad de Costa Rica</p>';
+  $fe_block_boxes->body = '<p>29 al 31 de julio</p>
+<p>Universidad de Costa Rica</p>';
 
   $export['logo_leyenda'] = $fe_block_boxes;
 
