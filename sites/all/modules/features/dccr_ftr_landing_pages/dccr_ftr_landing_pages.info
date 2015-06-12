@@ -42,7 +42,6 @@ features[page_manager_pages][] = home
 features[page_manager_pages][] = how_to_sponsor
 features[page_manager_pages][] = my_schedule
 features[page_manager_pages][] = register
-features[uuid_fpp][] = e6685593-84fd-42dc-bf99-3648a4ae35ea
 features[variable][] = site_frontpage
 features[views_view][] = speakers
 features[views_view][] = tracks
