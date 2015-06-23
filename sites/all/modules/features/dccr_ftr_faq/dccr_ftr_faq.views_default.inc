@@ -121,6 +121,27 @@ function dccr_ftr_faq_views_default_views() {
     'page' => 'page',
     'default' => 0,
   );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Indexed Nodo: Node ID */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_nodes_index';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['link_to_entity'] = 0;
+  /* Campo: Indexed Nodo: Título */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_nodes_index';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = 'faq/#faq-[nid]';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
   $translatables['faq'] = array(
     t('Master'),
     t('Frequently Asked Questions'),
@@ -138,6 +159,7 @@ function dccr_ftr_faq_views_default_views() {
 </div>'),
     t('Page'),
     t('Attachment'),
+    t('Block'),
   );
   $export['faq'] = $view;
 
