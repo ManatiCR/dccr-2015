@@ -145,6 +145,35 @@ function dccr_ftr_users_views_default_views() {
   $handler->display->display_options['filters']['roles']['value'] = array(
     5 => '5',
   );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Attendees from %1';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Indexed User: Company */
+  $handler->display->display_options['arguments']['field_company']['id'] = 'field_company';
+  $handler->display->display_options['arguments']['field_company']['table'] = 'search_api_index_dccr_users_index';
+  $handler->display->display_options['arguments']['field_company']['field'] = 'field_company';
+  $handler->display->display_options['arguments']['field_company']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_company']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['field_company']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_company']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_company']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['field_company']['validate_options']['vocabularies'] = array(
+    'company' => 'company',
+  );
+  $handler->display->display_options['arguments']['field_company']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['field_company']['not'] = 0;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Indexed User: Whether the entity is flagged with flag dccr_registration_complete */
+  $handler->display->display_options['filters']['flag_dccr_registration_complete']['id'] = 'flag_dccr_registration_complete';
+  $handler->display->display_options['filters']['flag_dccr_registration_complete']['table'] = 'search_api_index_dccr_users_index';
+  $handler->display->display_options['filters']['flag_dccr_registration_complete']['field'] = 'flag_dccr_registration_complete';
+  $handler->display->display_options['filters']['flag_dccr_registration_complete']['value'] = '1';
+  $handler->display->display_options['filters']['flag_dccr_registration_complete']['group'] = 1;
+  $handler->display->display_options['path'] = 'taxonomy/term/%';
   $translatables['dccr_attendees'] = array(
     t('Master'),
     t('Attendees'),
@@ -171,6 +200,8 @@ function dccr_ftr_users_views_default_views() {
     t('Block'),
     t('Community'),
     t('more'),
+    t('Attendees from %1'),
+    t('All'),
   );
   $export['dccr_attendees'] = $view;
 
