@@ -90,7 +90,7 @@
         <?php endif; ?>
 
         <div class="schedule-content-container">
-          <?php print l(t('Workshops'), 'workshops', array('attributes' => array('class' => array('schedule-workshops-link')))); ?>
+          <?php print l(t('July 29') . "\n" . t('(Workshops)'), 'workshops', array('attributes' => array('class' => array('schedule-workshops-link')))); ?>
           <ul class='content-tabs'>
             <li class="content-tab-item"><a class="content-tab-link" href='#tab1'><?php print t('July 30'); ?></a></li>
             <li class="content-tab-item"><a class="content-tab-link" href='#tab2'><?php print t('July 31'); ?></a></li>
