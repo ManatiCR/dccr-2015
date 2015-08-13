@@ -215,10 +215,10 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $display->content['new-43a4796d-bdc6-4866-bdc7-aab9204547c7'] = $pane;
     $display->panels['right'][2] = 'new-43a4796d-bdc6-4866-bdc7-aab9204547c7';
     $pane = new stdClass();
-    $pane->pid = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->pid = 'new-1b8b6a54-cb57-4b6e-a4f1-40b3b6c71a04';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'dccr_blocks-dccr_faq_block';
+    $pane->subtype = 'views-faq-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -234,9 +234,9 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
-    $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
-    $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->uuid = '1b8b6a54-cb57-4b6e-a4f1-40b3b6c71a04';
+    $display->content['new-1b8b6a54-cb57-4b6e-a4f1-40b3b6c71a04'] = $pane;
+    $display->panels['right'][3] = 'new-1b8b6a54-cb57-4b6e-a4f1-40b3b6c71a04';
     $pane = new stdClass();
     $pane->pid = 'new-96b23f53-7470-46bd-af2d-ce296f99f212';
     $pane->panel = 'right';
@@ -312,6 +312,8 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
       'left_below' => NULL,
       'right_below' => NULL,
       'bottom' => NULL,
+      'left' => NULL,
+      'right' => NULL,
     ),
   );
   $display->cache = array();
@@ -454,10 +456,10 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $display->content['new-43a4796d-bdc6-4866-bdc7-aab9204547c7'] = $pane;
     $display->panels['right'][2] = 'new-43a4796d-bdc6-4866-bdc7-aab9204547c7';
     $pane = new stdClass();
-    $pane->pid = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->pid = 'new-e70c8d8a-eed8-47b0-becd-f576d1e14676';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'dccr_blocks-dccr_faq_block';
+    $pane->subtype = 'views-faq-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -473,9 +475,9 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
-    $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
-    $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->uuid = 'e70c8d8a-eed8-47b0-becd-f576d1e14676';
+    $display->content['new-e70c8d8a-eed8-47b0-becd-f576d1e14676'] = $pane;
+    $display->panels['right'][3] = 'new-e70c8d8a-eed8-47b0-becd-f576d1e14676';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -545,6 +547,8 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
       'left_below' => NULL,
       'right_below' => NULL,
       'bottom' => NULL,
+      'left' => NULL,
+      'right' => NULL,
     ),
   );
   $display->cache = array();
@@ -706,10 +710,10 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $display->content['new-43a4796d-bdc6-4866-bdc7-aab9204547c7'] = $pane;
     $display->panels['right'][2] = 'new-43a4796d-bdc6-4866-bdc7-aab9204547c7';
     $pane = new stdClass();
-    $pane->pid = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->pid = 'new-9e117851-69de-4424-936c-1042f75dd12a';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'dccr_blocks-dccr_faq_block';
+    $pane->subtype = 'views-faq-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -725,9 +729,9 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
-    $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
-    $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->uuid = '9e117851-69de-4424-936c-1042f75dd12a';
+    $display->content['new-9e117851-69de-4424-936c-1042f75dd12a'] = $pane;
+    $display->panels['right'][3] = 'new-9e117851-69de-4424-936c-1042f75dd12a';
     $pane = new stdClass();
     $pane->pid = 'new-96b23f53-7470-46bd-af2d-ce296f99f212';
     $pane->panel = 'right';
@@ -803,6 +807,8 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
       'left_below' => NULL,
       'right_below' => NULL,
       'bottom' => NULL,
+      'left' => NULL,
+      'right' => NULL,
     ),
   );
   $display->cache = array();
@@ -964,10 +970,10 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $display->content['new-43a4796d-bdc6-4866-bdc7-aab9204547c7'] = $pane;
     $display->panels['right'][2] = 'new-43a4796d-bdc6-4866-bdc7-aab9204547c7';
     $pane = new stdClass();
-    $pane->pid = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->pid = 'new-9abebc9e-b63f-4462-b1c8-829b3ca9e09a';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'dccr_blocks-dccr_faq_block';
+    $pane->subtype = 'views-faq-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -983,9 +989,9 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
-    $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
-    $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->uuid = '9abebc9e-b63f-4462-b1c8-829b3ca9e09a';
+    $display->content['new-9abebc9e-b63f-4462-b1c8-829b3ca9e09a'] = $pane;
+    $display->panels['right'][3] = 'new-9abebc9e-b63f-4462-b1c8-829b3ca9e09a';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1204,6 +1210,27 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->uuid = '96b23f53-7470-46bd-af2d-ce296f99f212';
     $display->content['new-96b23f53-7470-46bd-af2d-ce296f99f212'] = $pane;
     $display->panels['right'][4] = 'new-96b23f53-7470-46bd-af2d-ce296f99f212';
+    $pane = new stdClass();
+    $pane->pid = 'new-3a2e7fc8-81f7-4fc3-8d1f-36125e695ed0';
+    $pane->panel = 'right';
+    $pane->type = 'block';
+    $pane->subtype = 'views-faq-block_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '3a2e7fc8-81f7-4fc3-8d1f-36125e695ed0';
+    $display->content['new-3a2e7fc8-81f7-4fc3-8d1f-36125e695ed0'] = $pane;
+    $display->panels['right'][5] = 'new-3a2e7fc8-81f7-4fc3-8d1f-36125e695ed0';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1360,10 +1387,10 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $display->content['new-43a4796d-bdc6-4866-bdc7-aab9204547c7'] = $pane;
     $display->panels['right'][2] = 'new-43a4796d-bdc6-4866-bdc7-aab9204547c7';
     $pane = new stdClass();
-    $pane->pid = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->pid = 'new-567729a6-7387-4f5a-9460-c81374c1cae1';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'dccr_blocks-dccr_faq_block';
+    $pane->subtype = 'views-faq-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -1379,9 +1406,9 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
-    $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
-    $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->uuid = '567729a6-7387-4f5a-9460-c81374c1cae1';
+    $display->content['new-567729a6-7387-4f5a-9460-c81374c1cae1'] = $pane;
+    $display->panels['right'][3] = 'new-567729a6-7387-4f5a-9460-c81374c1cae1';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2494,10 +2521,10 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $display->content['new-43a4796d-bdc6-4866-bdc7-aab9204547c7'] = $pane;
     $display->panels['right'][2] = 'new-43a4796d-bdc6-4866-bdc7-aab9204547c7';
     $pane = new stdClass();
-    $pane->pid = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->pid = 'new-425d3bd3-7e5b-481a-ace2-cf7338bee66c';
     $pane->panel = 'right';
     $pane->type = 'block';
-    $pane->subtype = 'dccr_blocks-dccr_faq_block';
+    $pane->subtype = 'views-faq-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -2513,9 +2540,9 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
-    $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
-    $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane->uuid = '425d3bd3-7e5b-481a-ace2-cf7338bee66c';
+    $display->content['new-425d3bd3-7e5b-481a-ace2-cf7338bee66c'] = $pane;
+    $display->panels['right'][3] = 'new-425d3bd3-7e5b-481a-ace2-cf7338bee66c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2834,6 +2861,29 @@ function dccr_ftr_landing_pages_default_page_manager_pages() {
     $pane->uuid = '0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
     $display->content['new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9'] = $pane;
     $display->panels['right'][3] = 'new-0a64d6f4-9725-44ae-89fc-b0535e35b1b9';
+    $pane = new stdClass();
+    $pane->pid = 'new-1f86c22e-e419-4660-b439-4f8fe43eae94';
+    $pane->panel = 'right';
+    $pane->type = 'block';
+    $pane->subtype = 'views-faq-block_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '1f86c22e-e419-4660-b439-4f8fe43eae94';
+    $display->content['new-1f86c22e-e419-4660-b439-4f8fe43eae94'] = $pane;
+    $display->panels['right'][4] = 'new-1f86c22e-e419-4660-b439-4f8fe43eae94';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

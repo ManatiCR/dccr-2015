@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = dccr_ftr_faq
 dependencies[] = dccr_ftr_landing_pages
 dependencies[] = dccr_ftr_workshop
+dependencies[] = node
 dependencies[] = text
 dependencies[] = views
 features[ctools][] = strongarm:strongarm:1
